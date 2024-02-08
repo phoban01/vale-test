@@ -1,11 +1,12 @@
 name: Grammer Check
 on: [pull_request]
-permissions:
-  pull-requests: write
 jobs:
   readme:
     name: Check README.md
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pull-requests: write
     steps:
       - uses: actions/checkout@v3
       - uses: phoban01/vale-openai-action@openai
