@@ -1,6 +1,7 @@
 name: Grammer Check
 on: [pull_request]
-
+permissions:
+  pull-requests: write
 jobs:
   readme:
     name: Check README.md
