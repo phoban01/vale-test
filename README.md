@@ -7,7 +7,7 @@
 
 ## Heading With Misspelled Words and Inconsistent Capitalization
 
-this have an extrememly bad way of writin.
+this here have an extrememly bad way of writin.
 
 Underneath the heading, there should be some text. However, here, we see a lack of content. This is not acceptable.
 
