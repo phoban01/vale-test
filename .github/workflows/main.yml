@@ -1,0 +1,13 @@
+name: Grammer Check
+on: [pull_request]
+
+jobs:
+  readme:
+    name: Check README.md
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: phoban01/vale-openai-action@openai
+        with:
+          path: README.md
+          openai_api_key: ${{ secrets.OPENAI_API_KEY }}
